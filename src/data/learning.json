@@ -1,0 +1,134 @@
+[
+  {
+    "id": "card-deck-mathe-analysis",
+    "title": "Analysis Grundlagen",
+    "subject": "Mathematik",
+    "type": "flashcards",
+    "difficulty": "medium",
+    "tags": ["Mathe", "Analysis", "Ableitungen", "DHBW"],
+    "description": "Wichtigste Ableitungsregeln und Grenzwerte für die Analysis-Klausur.",
+    "isCustom": false,
+    "cards": [
+      {
+        "id": "card-1",
+        "front": "Was ist die Ableitung von x^n?",
+        "back": "n * x^(n-1)",
+        "hint": "Potenzregel"
+      },
+      {
+        "id": "card-2",
+        "front": "Was ist die Ableitung von sin(x)?",
+        "back": "cos(x)",
+        "hint": "Trigonometrische Ableitung"
+      },
+      {
+        "id": "card-3",
+        "front": "Was ist die Ableitung von e^x?",
+        "back": "e^x",
+        "hint": "Exponentialfunktion bleibt gleich"
+      },
+      {
+        "id": "card-4",
+        "front": "Was ist die Produktregel?",
+        "back": "(f*g)' = f'*g + f*g'",
+        "hint": "Zwei Funktionen multipliziert"
+      },
+      {
+        "id": "card-5",
+        "front": "Was ist die Kettenregel?",
+        "back": "(f(g(x)))' = f'(g(x)) * g'(x)",
+        "hint": "Außere mal innere Ableitung"
+      }
+    ]
+  },
+  {
+    "id": "card-deck-prog-java",
+    "title": "Java Grundlagen",
+    "subject": "Programmierung",
+    "type": "flashcards",
+    "difficulty": "easy",
+    "tags": ["Java", "OOP", "Programmierung", "DHBW"],
+    "description": "Grundlegende Java-Konzepte für das erste Semester.",
+    "isCustom": false,
+    "cards": [
+      {
+        "id": "card-1",
+        "front": "Was ist eine Klasse in Java?",
+        "back": "Ein Bauplan für Objekte, der Attribute (Felder) und Methoden definiert.",
+        "hint": "OOP-Konzept"
+      },
+      {
+        "id": "card-2",
+        "front": "Was ist der Unterschied zwischen int und Integer?",
+        "back": "int ist ein primitiver Datentyp, Integer ist eine Wrapper-Klasse (Objekt).",
+        "hint": "Primitiv vs. Objekt"
+      },
+      {
+        "id": "card-3",
+        "front": "Was macht das Schlüsselwort 'static'?",
+        "back": "Gehört zur Klasse, nicht zum Objekt. Kann ohne Instanz aufgerufen werden.",
+        "hint": "Klassen-Methode/-Variable"
+      },
+      {
+        "id": "card-4",
+        "front": "Was ist Vererbung?",
+        "back": "Eine Klasse übernimmt Eigenschaften und Methoden einer anderen Klasse mit 'extends'.",
+        "hint": "extends-Schlüsselwort"
+      }
+    ]
+  },
+  {
+    "id": "video-bwl-intro",
+    "title": "BWL Einführung: Unternehmensformen",
+    "subject": "BWL",
+    "type": "video",
+    "difficulty": "easy",
+    "tags": ["BWL", "Unternehmensformen", "GmbH", "AG", "DHBW"],
+    "description": "Überblick über die wichtigsten Unternehmensformen in Deutschland.",
+    "isCustom": false,
+    "videoUrl": "https://www.youtube.com/embed/dQw4w9WgXcQ",
+    "durationMinutes": 15,
+    "chapters": [
+      { "title": "Einzelunternehmen", "startMinute": 0 },
+      { "title": "GbR und OHG", "startMinute": 4 },
+      { "title": "GmbH", "startMinute": 8 },
+      { "title": "AG", "startMinute": 12 }
+    ]
+  },
+  {
+    "id": "card-deck-englisch-business",
+    "title": "Business English Vokabular",
+    "subject": "Englisch",
+    "type": "flashcards",
+    "difficulty": "medium",
+    "tags": ["Englisch", "Business", "Vokabular", "DHBW"],
+    "description": "Wichtige Fachbegriffe für Business English Präsentationen und E-Mails.",
+    "isCustom": false,
+    "cards": [
+      {
+        "id": "card-1",
+        "front": "revenue",
+        "back": "Umsatz / Einnahmen",
+        "hint": "Gesamte Einnahmen eines Unternehmens"
+      },
+      {
+        "id": "card-2",
+        "front": "stakeholder",
+        "back": "Interessengruppe / Anspruchsgruppe",
+        "hint": "Alle Parteien, die am Unternehmen interessiert sind"
+      },
+      {
+        "id": "card-3",
+        "front": "benchmark",
+        "back": "Vergleichsmaßstab / Referenzwert",
+        "hint": "Standard zum Vergleich"
+      },
+      {
+        "id": "card-4",
+        "front": "leverage",
+        "back": "Hebel / Einflussvermögen ausnutzen",
+        "hint": "Vorteil nutzen"
+      }
+    ]
+  }
+]
