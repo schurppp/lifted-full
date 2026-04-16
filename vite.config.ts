@@ -7,6 +7,6 @@ export default defineConfig({
   test: {
     globals: true,
     environment: 'jsdom',
-    setupFiles: ['./src/test/setup.ts'],
+    // setupFiles werden hinzugefuegt sobald src/test/setup.ts existiert (Sprint 5)
   },
 })
