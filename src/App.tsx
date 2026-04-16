@@ -1,5 +1,5 @@
 import React from 'react';
-import { BrowserRouter as Router, Routes, Route, Navigate } from 'react-router-dom';
+import { HashRouter as Router, Routes, Route, Navigate } from 'react-router-dom';
 import { AuthProvider, useAuth } from './context/AuthContext';
 import Navbar from './components/Navbar';
 import Footer from './components/Footer';
@@ -70,11 +70,11 @@ const AppRoutes: React.FC = () => {
 };
 
 const App: React.FC = () => (
-  <Router>
-    <AuthProvider>
+  <AuthProvider>
+    <Router>
       <AppRoutes />
-    </AuthProvider>
-  </Router>
+    </Router>
+  </AuthProvider>
 );
 
 export default App;
