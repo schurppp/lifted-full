@@ -76,14 +76,14 @@ const OnboardingPage: React.FC = () => {
       {/* Progress bar */}
       <div className="onboarding-progress">
         {STEPS.map((s, i) => (
-          <div key={s} className={`progress-step ${i <= step ? 'active' : ''}`}>
-            <div className="step-number">{i < step ? '✓' : i + 1}</div>
+          <div key={i} className={`progress-step ${i <= step ? 'active' : ''}`}>
+            <div className="step-circle">{i < step ? '✓' : i + 1}</div>
             <span className="step-label">{s}</span>
           </div>
         ))}
       </div>
 
-      <div className="onboarding-card">
+      <div className="onboarding-content">
         {step === 0 && (
           <div className="onboarding-step">
             <h2>Persönliche Daten</h2>
@@ -119,18 +119,18 @@ const OnboardingPage: React.FC = () => {
             <div className="goal-grid">
               {([
                 { val: 'muscle', label: 'Muskelaufbau', icon: '💪' },
-                { val: 'fat-loss', label: 'Fettabbau', icon: '🔥' },
+                { val: 'fat_loss', label: 'Fettabbau', icon: '🔥' },
                 { val: 'endurance', label: 'Ausdauer', icon: '🏃' },
                 { val: 'health', label: 'Gesundheit', icon: '❤️' },
               ] as { val: FitnessGoal; label: string; icon: string }[]).map(g => (
-                <div
+                <button
                   key={g.val}
-                  className={`goal-card ${data.goal === g.val ? 'selected' : ''}`}
+                  className={`goal-btn ${data.goal === g.val ? 'selected' : ''}`}
                   onClick={() => update('goal', g.val)}
                 >
-                  <span className="goal-icon">{g.icon}</span>
-                  <span className="goal-label">{g.label}</span>
-                </div>
+                  <span>{g.icon}</span>
+                  <span>{g.label}</span>
+                </button>
               ))}
             </div>
           </div>
@@ -195,17 +195,17 @@ const OnboardingPage: React.FC = () => {
             </div>
           </div>
         )}
+      </div>
 
-        <div className="onboarding-buttons">
-          {step > 0 && (
-            <button className="btn-outline" onClick={() => setStep(step - 1)}>Zurück</button>
-          )}
-          {step < STEPS.length - 1 ? (
-            <button className="btn-primary" onClick={() => setStep(step + 1)}>Weiter</button>
-          ) : (
-            <button className="btn-primary" onClick={handleFinish}>Los geht's!</button>
-          )}
-        </div>
+      <div className="onboarding-nav">
+        {step > 0 && (
+          <button className="btn-outline" onClick={() => setStep(step - 1)}>Zurück</button>
+        )}
+        {step < STEPS.length - 1 ? (
+          <button className="btn-primary" onClick={() => setStep(step + 1)}>Weiter</button>
+        ) : (
+          <button className="btn-primary" onClick={handleFinish}>Los geht's!</button>
+        )}
       </div>
     </div>
   );
