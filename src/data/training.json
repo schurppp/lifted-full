@@ -153,9 +153,9 @@
     ]
   },
   {
-    "id": "plan-fat-loss-intermediate",
+    "id": "plan-fat_loss-intermediate",
     "name": "Fat Burner HIIT",
-    "goal": "fat-loss",
+    "goal": "fat_loss",
     "level": "intermediate",
     "daysPerWeek": 4,
     "durationWeeks": 6,
