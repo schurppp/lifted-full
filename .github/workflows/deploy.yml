@@ -32,9 +32,6 @@ jobs:
       - name: Build
         run: npm run build
 
-      - name: Show dist/index.html
-        run: cat dist/index.html
-
       - name: Add .nojekyll
         run: touch ./dist/.nojekyll
 
