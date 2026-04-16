@@ -56,7 +56,7 @@ const LandingPage: React.FC = () => {
           <div className="feature-card">
             <div className="feature-icon learning-icon">🧠</div>
             <h3>Lernen</h3>
-            <p>Karteikarten und Videos für dein Studium. Perfekt für die Trainingspaese geeignet.</p>
+                        <p>Karteikarten und Videos für dein Studium. Perfekt für die Trainingspause geeignet.</p>
             <Link to="/learning-info" className="feature-link">Mehr erfahren →</Link>
           </div>
         </div>
