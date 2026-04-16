@@ -7,6 +7,7 @@ const LoginPage: React.FC = () => {
   const [password, setPassword] = useState('');
   const [error, setError] = useState('');
   const [loading, setLoading] = useState(false);
+  const [showPassword, setShowPassword] = useState(false);
   const { login } = useAuth();
   const navigate = useNavigate();
 
@@ -30,47 +31,77 @@ const LoginPage: React.FC = () => {
 
   return (
     <div className="auth-page">
-      <div className="auth-card">
-        <div className="auth-logo">
-          <span className="logo-icon">L</span>
-          <span className="logo-text">Lifted</span>
+      <div className="auth-container">
+        <div className="auth-brand">
+          <Link to="/" className="auth-logo-link">
+            <span className="logo-icon">L</span>
+            <span className="logo-text">Lifted</span>
+          </Link>
+          <div className="auth-brand-visual">
+            <div className="brand-card">
+              <div className="brand-card-icon">⚡</div>
+              <p className="brand-card-text">Trainiere smarter</p>
+            </div>
+            <div className="brand-card">
+              <div className="brand-card-icon">🧠</div>
+              <p className="brand-card-text">Lerne effizienter</p>
+            </div>
+            <div className="brand-card">
+              <div className="brand-card-icon">🥗</div>
+              <p className="brand-card-text">Ernähre dich besser</p>
+            </div>
+          </div>
         </div>
-        <h1>Willkommen zurück</h1>
-        <p className="auth-subtitle">Melde dich an, um fortzufahren</p>
-
-        {error && <div className="error-message">{error}</div>}
-
-        <form onSubmit={handleSubmit} className="auth-form">
-          <div className="form-group">
-            <label htmlFor="email">E-Mail</label>
-            <input
-              id="email"
-              type="email"
-              value={email}
-              onChange={e => setEmail(e.target.value)}
-              placeholder="deine@email.de"
-              autoComplete="email"
-            />
+        <div className="auth-card">
+          <div className="auth-card-header">
+            <h1>Willkommen zurück</h1>
+            <p className="auth-subtitle">Melde dich an, um fortzufahren</p>
           </div>
-          <div className="form-group">
-            <label htmlFor="password">Passwort</label>
-            <input
-              id="password"
-              type="password"
-              value={password}
-              onChange={e => setPassword(e.target.value)}
-              placeholder="Dein Passwort"
-              autoComplete="current-password"
-            />
-          </div>
-          <button type="submit" className="btn-primary full-width" disabled={loading}>
-            {loading ? 'Wird eingeloggt...' : 'Einloggen'}
-          </button>
-        </form>
 
-        <p className="auth-switch">
-          Noch kein Account? <Link to="/register">Jetzt registrieren</Link>
-        </p>
+          {error && <div className="error-message">{error}</div>}
+
+          <form onSubmit={handleSubmit} className="auth-form">
+            <div className="form-group">
+              <label htmlFor="email">E-Mail</label>
+              <input
+                id="email"
+                type="email"
+                value={email}
+                onChange={(e) => setEmail(e.target.value)}
+                placeholder="deine@email.de"
+                autoComplete="email"
+              />
+            </div>
+            <div className="form-group">
+              <label htmlFor="password">Passwort</label>
+              <div className="input-with-toggle">
+                <input
+                  id="password"
+                  type={showPassword ? 'text' : 'password'}
+                  value={password}
+                  onChange={(e) => setPassword(e.target.value)}
+                  placeholder="Dein Passwort"
+                  autoComplete="current-password"
+                />
+                <button
+                  type="button"
+                  className="password-toggle"
+                  onClick={() => setShowPassword(!showPassword)}
+                  aria-label="Passwort anzeigen"
+                >
+                  {showPassword ? '🙈' : '👁️'}
+                </button>
+              </div>
+            </div>
+            <button type="submit" className="btn-primary btn-full" disabled={loading}>
+              {loading ? 'Anmelden...' : 'Anmelden'}
+            </button>
+          </form>
+
+          <div className="auth-footer">
+            <p>Noch kein Account? <Link to="/register" className="auth-link">Kostenlos registrieren</Link></p>
+          </div>
+        </div>
       </div>
     </div>
   );
