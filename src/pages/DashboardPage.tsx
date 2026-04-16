@@ -1,11 +1,12 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { useAuth } from '../context/AuthContext';
+import { FitnessGoal } from '../types';
 
 const DashboardPage: React.FC = () => {
   const { user, profile } = useAuth();
 
-  const goalLabel: Record<string, string> = {
+  const goalLabel: Record<FitnessGoal, string> = {
     muscle: 'Muskelaufbau',
     fat_loss: 'Fettabbau',
     endurance: 'Ausdauer',
@@ -26,7 +27,7 @@ const DashboardPage: React.FC = () => {
         )}
       </div>
 
-      {/* Quick Stats */}
+      {/* Quick Stats - TODO: Echte Daten aus Backend laden (Sprint 6+) */}
       <div className="stats-grid">
         <div className="stat-card">
           <div className="stat-icon">⚡</div>
