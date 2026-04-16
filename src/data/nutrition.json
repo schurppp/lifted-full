@@ -1,0 +1,147 @@
+[
+  {
+    "id": "recipe-oatmeal-banana",
+    "name": "Haferflocken mit Banane",
+    "category": "breakfast",
+    "prepTimeMinutes": 10,
+    "calories": 380,
+    "protein": 12,
+    "carbs": 65,
+    "fat": 7,
+    "tags": ["Frühstück", "Vegan", "High-Carb", "Muskelaufbau"],
+    "goal": ["muscle", "performance"],
+    "difficulty": "easy",
+    "servings": 1,
+    "ingredients": [
+      { "name": "Haferflocken", "amount": "80g" },
+      { "name": "Banane", "amount": "1 mittelgroß" },
+      { "name": "Mandelmilch", "amount": "250ml" },
+      { "name": "Chiasamen", "amount": "1 EL" },
+      { "name": "Honig", "amount": "1 TL" }
+    ],
+    "instructions": [
+      "Haferflocken mit Mandelmilch in einem Topf aufkochen.",
+      "5 Minuten köcheln lassen und gelegentlich rühren.",
+      "Banane in Scheiben schneiden.",
+      "Porridge in eine Schüssel geben, mit Banane, Chiasamen und Honig toppen."
+    ],
+    "description": "Perfektes Frühstück für Sportler – liefert langanhaltende Energie und unterstützt den Muskelaufbau.",
+    "isCustom": false
+  },
+  {
+    "id": "recipe-chicken-rice",
+    "name": "Hähnchen mit Reis und Gemüse",
+    "category": "lunch",
+    "prepTimeMinutes": 30,
+    "calories": 520,
+    "protein": 45,
+    "carbs": 55,
+    "fat": 10,
+    "tags": ["Mittagessen", "High-Protein", "Muskelaufbau", "Meal-Prep"],
+    "goal": ["muscle", "performance"],
+    "difficulty": "medium",
+    "servings": 1,
+    "ingredients": [
+      { "name": "Hähnchenbrustfilet", "amount": "200g" },
+      { "name": "Vollkornreis", "amount": "100g (trocken)" },
+      { "name": "Brokkoli", "amount": "150g" },
+      { "name": "Paprika", "amount": "1 Stück" },
+      { "name": "Olivenöl", "amount": "1 EL" },
+      { "name": "Salz, Pfeffer, Knoblauchpulver", "amount": "nach Geschmack" }
+    ],
+    "instructions": [
+      "Reis nach Packungsanleitung kochen.",
+      "Hähnchenbrust mit Gewürzen einreiben und in Olivenöl anbraten (je 6 Min. pro Seite).",
+      "Brokkoli und Paprika dämpfen oder in der Pfanne garen.",
+      "Alles zusammen servieren."
+    ],
+    "description": "Klassisches Bodybuilder-Gericht – hoher Proteingehalt, komplexe Kohlenhydrate und viele Vitamine.",
+    "isCustom": false
+  },
+  {
+    "id": "recipe-salmon-sweet-potato",
+    "name": "Lachs mit Süßkartoffel",
+    "category": "dinner",
+    "prepTimeMinutes": 35,
+    "calories": 490,
+    "protein": 40,
+    "carbs": 40,
+    "fat": 18,
+    "tags": ["Abendessen", "Omega-3", "High-Protein", "Fettabbau"],
+    "goal": ["fat_loss", "performance"],
+    "difficulty": "medium",
+    "servings": 1,
+    "ingredients": [
+      { "name": "Lachsfilet", "amount": "180g" },
+      { "name": "Süßkartoffel", "amount": "200g" },
+      { "name": "Zitrone", "amount": "0,5 Stück" },
+      { "name": "Dill", "amount": "frisch, nach Geschmack" },
+      { "name": "Olivenöl", "amount": "1 EL" }
+    ],
+    "instructions": [
+      "Süßkartoffel schälen, würfeln und 25 Min. im Ofen bei 200°C backen.",
+      "Lachs mit Zitronensaft, Dill und Olivenöl marinieren.",
+      "Lachs in der Pfanne 4 Min. je Seite braten.",
+      "Zusammen servieren."
+    ],
+    "description": "Reich an Omega-3-Fettsäuren und gesunden Kohlenhydraten – ideal für den Muskelerhalt beim Fettabbau.",
+    "isCustom": false
+  },
+  {
+    "id": "recipe-protein-shake",
+    "name": "Protein-Shake mit Erdnussbutter",
+    "category": "snack",
+    "prepTimeMinutes": 5,
+    "calories": 320,
+    "protein": 35,
+    "carbs": 20,
+    "fat": 12,
+    "tags": ["Snack", "Post-Workout", "High-Protein", "Schnell"],
+    "goal": ["muscle", "performance"],
+    "difficulty": "easy",
+    "servings": 1,
+    "ingredients": [
+      { "name": "Proteinpulver (Whey/Vegan)", "amount": "30g" },
+      { "name": "Erdnussbutter", "amount": "1 EL" },
+      { "name": "Milch oder Mandelmilch", "amount": "300ml" },
+      { "name": "Banane", "amount": "0,5 Stück" }
+    ],
+    "instructions": [
+      "Alle Zutaten in einen Mixer geben.",
+      "30 Sekunden mixen bis alles cremig ist.",
+      "Direkt nach dem Training trinken."
+    ],
+    "description": "Schneller Post-Workout Shake für optimale Regeneration und Muskelaufbau.",
+    "isCustom": false
+  },
+  {
+    "id": "recipe-greek-salad",
+    "name": "Griechischer Salat mit Kichererbsen",
+    "category": "lunch",
+    "prepTimeMinutes": 15,
+    "calories": 380,
+    "protein": 18,
+    "carbs": 35,
+    "fat": 20,
+    "tags": ["Mittagessen", "Vegetarisch", "Fettabbau", "Frisch"],
+    "goal": ["fat_loss", "health"],
+    "difficulty": "easy",
+    "servings": 1,
+    "ingredients": [
+      { "name": "Kichererbsen (Dose)", "amount": "200g" },
+      { "name": "Feta-Käse", "amount": "60g" },
+      { "name": "Tomaten", "amount": "2 Stück" },
+      { "name": "Gurke", "amount": "0,5 Stück" },
+      { "name": "Oliven", "amount": "10 Stück" },
+      { "name": "Olivenöl & Zitronensaft", "amount": "2 EL" }
+    ],
+    "instructions": [
+      "Gemüse waschen und würfeln.",
+      "Kichererbsen abspülen und abtropfen lassen.",
+      "Alle Zutaten in einer Schüssel mischen.",
+      "Mit Olivenöl, Zitronensaft, Salz und Pfeffer abschmecken."
+    ],
+    "description": "Leichter, nährstoffreicher Salat mit viel Protein durch Kichererbsen und Feta.",
+    "isCustom": false
+  }
+]
