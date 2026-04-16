@@ -1,0 +1,241 @@
+[
+  {
+    "id": "plan-muscle-beginner",
+    "name": "Grundkraft Aufbau",
+    "goal": "muscle",
+    "level": "beginner",
+    "daysPerWeek": 3,
+    "durationWeeks": 8,
+    "description": "Perfekter Einstieg in den Kraftsport. Fokus auf Grundbewegungen und saubere Technik.",
+    "tags": ["Anfänger", "Ganzkörper", "3 Tage"],
+    "days": [
+      {
+        "day": "Montag",
+        "focus": "Ganzkörper A",
+        "durationMinutes": 50,
+        "exercises": [
+          {
+            "id": "squat",
+            "name": "Kniebeuge",
+            "muscleGroup": "Beine / Gesäß",
+            "equipment": "Langhantel",
+            "difficulty": "beginner",
+            "sets": 3,
+            "reps": "8-10",
+            "restSeconds": 90,
+            "description": "Grundübung für die untere Körperhälfte. Stärkt Oberschenkel, Gesäß und Rücken.",
+            "tips": ["Rücken gerade halten", "Knie über den Zehen", "Tief in die Hocke"]
+          },
+          {
+            "id": "bench-press",
+            "name": "Bankdrücken",
+            "muscleGroup": "Brust / Trizeps",
+            "equipment": "Langhantel / Bank",
+            "difficulty": "beginner",
+            "sets": 3,
+            "reps": "8-10",
+            "restSeconds": 90,
+            "description": "Klassische Brustübung. Trainiert Brust, vorderen Schultermuskel und Trizeps.",
+            "tips": ["Schulterblätter zusammenziehen", "Kontrollierte Bewegung", "Ellbogen 45° vom Körper"]
+          },
+          {
+            "id": "barbell-row",
+            "name": "Rudern",
+            "muscleGroup": "Rücken / Bizeps",
+            "equipment": "Langhantel",
+            "difficulty": "beginner",
+            "sets": 3,
+            "reps": "8-10",
+            "restSeconds": 90,
+            "description": "Zieht den Rücken in die Breite und stärkt den Bizeps.",
+            "tips": ["Rumpf angespannt", "Ellbogen nah am Körper ziehen", "Volle Bewegungsamplitude"]
+          },
+          {
+            "id": "overhead-press",
+            "name": "Schulterdrücken",
+            "muscleGroup": "Schultern",
+            "equipment": "Langhantel",
+            "difficulty": "beginner",
+            "sets": 3,
+            "reps": "8-10",
+            "restSeconds": 90,
+            "description": "Grundübung für starke und breite Schultern.",
+            "tips": ["Core anspannen", "Gesäß zusammenkneifen", "Bar nahe am Gesicht führen"]
+          }
+        ]
+      },
+      {
+        "day": "Mittwoch",
+        "focus": "Ganzkörper B",
+        "durationMinutes": 50,
+        "exercises": [
+          {
+            "id": "deadlift",
+            "name": "Kreuzheben",
+            "muscleGroup": "Rücken / Beine",
+            "equipment": "Langhantel",
+            "difficulty": "beginner",
+            "sets": 3,
+            "reps": "5-6",
+            "restSeconds": 120,
+            "description": "König der Übungen. Trainiert fast jeden Muskel im Körper.",
+            "tips": ["Rücken immer gerade", "Bar bleibt nah am Körper", "Mit dem Boden drücken"]
+          },
+          {
+            "id": "incline-dumbbell",
+            "name": "Schrägbank Kurzhantel",
+            "muscleGroup": "Obere Brust",
+            "equipment": "Kurzhantel / Bank",
+            "difficulty": "beginner",
+            "sets": 3,
+            "reps": "10-12",
+            "restSeconds": 75,
+            "description": "Trainiert besonders die obere Brust für eine vollere Definition.",
+            "tips": ["45° Neigung", "Volle Streckung am oberen Punkt", "Kontrolliert absenken"]
+          },
+          {
+            "id": "lat-pulldown",
+            "name": "Lat Ziehen",
+            "muscleGroup": "Latissimus / Bizeps",
+            "equipment": "Kabelzug",
+            "difficulty": "beginner",
+            "sets": 3,
+            "reps": "10-12",
+            "restSeconds": 75,
+            "description": "Zieht die Schulterblätter zusammen und formt den Rücken.",
+            "tips": ["Leicht nach hinten lehnen", "Ellbogen nach unten ziehen", "Brust raus"]
+          }
+        ]
+      },
+      {
+        "day": "Freitag",
+        "focus": "Ganzkörper C",
+        "durationMinutes": 45,
+        "exercises": [
+          {
+            "id": "goblet-squat",
+            "name": "Goblet Squat",
+            "muscleGroup": "Beine",
+            "equipment": "Kurzhantel",
+            "difficulty": "beginner",
+            "sets": 4,
+            "reps": "12-15",
+            "restSeconds": 60,
+            "description": "Variante der Kniebeuge die besonders die vorderen Oberschenkel betont.",
+            "tips": ["Hantel vor der Brust halten", "Tiefe Position anstreben", "Knie weit auseinander"]
+          },
+          {
+            "id": "push-up",
+            "name": "Liegestütze",
+            "muscleGroup": "Brust / Schultern / Trizeps",
+            "equipment": "Kein",
+            "difficulty": "beginner",
+            "sets": 3,
+            "reps": "12-15",
+            "restSeconds": 60,
+            "description": "Klassische Körpergewichtsübung für Brust und Trizeps.",
+            "tips": ["Körper gerade wie ein Brett", "Ellbogen 45° zum Körper", "Brust fast den Boden berühren"]
+          },
+          {
+            "id": "plank",
+            "name": "Plank",
+            "muscleGroup": "Core",
+            "equipment": "Kein",
+            "difficulty": "beginner",
+            "sets": 3,
+            "reps": "30s",
+            "restSeconds": 60,
+            "description": "Statische Core-Übung für maximale Rumpfstabilität.",
+            "tips": ["Becken nicht heben oder senken", "Blick auf den Boden", "Gleichmäßig atmen"]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "plan-fat-loss-intermediate",
+    "name": "Fat Burner HIIT",
+    "goal": "fat-loss",
+    "level": "intermediate",
+    "daysPerWeek": 4,
+    "durationWeeks": 6,
+    "description": "Hochintensives Intervalltraining für maximalen Kalorienverbrauch und Fettabbau.",
+    "tags": ["HIIT", "Fettabbau", "Fortgeschritten"],
+    "days": [
+      {
+        "day": "Montag",
+        "focus": "HIIT Ober- und Unterkörper",
+        "durationMinutes": 35,
+        "exercises": [
+          {
+            "id": "burpees",
+            "name": "Burpees",
+            "muscleGroup": "Ganzkörper",
+            "equipment": "Kein",
+            "difficulty": "intermediate",
+            "sets": 4,
+            "reps": "10",
+            "restSeconds": 30,
+            "description": "Ganzkörper-Konditionsübung mit maximaler Intensität.",
+            "tips": ["Explosive Aufsprünge", "Core durchgehend angespannt", "Eigenes Tempo finden"]
+          },
+          {
+            "id": "jump-squat",
+            "name": "Sprungkniebeugen",
+            "muscleGroup": "Beine / Gesäß",
+            "equipment": "Kein",
+            "difficulty": "intermediate",
+            "sets": 4,
+            "reps": "15",
+            "restSeconds": 30,
+            "description": "Explosive Variante der Kniebeuge für Power und Kalorienverbrauch.",
+            "tips": ["Weich landen", "Knie federn", "Maximale Sprungkraft"]
+          },
+          {
+            "id": "mountain-climbers",
+            "name": "Mountain Climbers",
+            "muscleGroup": "Core / Schultern",
+            "equipment": "Kein",
+            "difficulty": "intermediate",
+            "sets": 3,
+            "reps": "20s",
+            "restSeconds": 20,
+            "description": "Dynamische Core-Übung die gleichzeitig Cardio bietet.",
+            "tips": ["Hüfte tief halten", "Schnelle Beinbewegungen", "Gleichmäßiges Tempo"]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "plan-muscle-advanced",
+    "name": "Push Pull Legs",
+    "goal": "muscle",
+    "level": "advanced",
+    "daysPerWeek": 6,
+    "durationWeeks": 12,
+    "description": "Klassisches PPL-Split-System für maximalen Muskelaufbau bei Fortgeschrittenen.",
+    "tags": ["PPL", "Split", "6 Tage", "Fortgeschritten"],
+    "days": [
+      {
+        "day": "Montag",
+        "focus": "Push - Brust / Schultern / Trizeps",
+        "durationMinutes": 70,
+        "exercises": [
+          {
+            "id": "bench-press-adv",
+            "name": "Flachbank Langhantel",
+            "muscleGroup": "Brust",
+            "equipment": "Langhantel",
+            "difficulty": "advanced",
+            "sets": 4,
+            "reps": "4-6",
+            "restSeconds": 180,
+            "description": "Schweres Bankdrücken für maximale Kraftentwicklung.",
+            "tips": ["Explosiv drücken", "Kontrolliert absenken", "Sicherungspartner empfohlen"]
+          }
+        ]
+      }
+    ]
+  }
+]
