@@ -4,21 +4,26 @@
 export type FitnessGoal = 'muscle' | 'fat-loss' | 'endurance' | 'health';
 export type BodyType = 'ectomorph' | 'mesomorph' | 'endomorph';
 export type ExperienceLevel = 'beginner' | 'intermediate' | 'advanced';
+export type LearningStyle = 'visual' | 'reading' | 'mixed';
 
 export interface UserProfile {
   id: string;
   name: string;
   age: number;
-  weight: number;        // kg
-  height: number;        // cm
+  weight: number;       // kg
+  height: number;       // cm
   gender: 'male' | 'female' | 'other';
   goal: FitnessGoal;
   bodyType: BodyType;
   experienceLevel: ExperienceLevel;
+  fitnessLevel: ExperienceLevel;    // Alias fuer experienceLevel (Onboarding)
   trainingDaysPerWeek: number;
+  daysPerWeek: number;              // Alias fuer trainingDaysPerWeek (Onboarding)
   availableMinutesPerDay: number;
+  equipment: string[];              // z.B. ['gym'] oder ['home']
   semester: number;
   subjects: string[];
+  learningStyle: LearningStyle;
   createdAt: string;
   onboardingComplete: boolean;
 }
@@ -31,7 +36,7 @@ export interface Exercise {
   equipment: string;
   difficulty: ExperienceLevel;
   sets: number;
-  reps: string;          // z.B. '8-12' oder '30s'
+  reps: string;         // z.B. '8-12' oder '30s'
   restSeconds: number;
   description: string;
   tips: string[];
@@ -44,6 +49,9 @@ export interface TrainingDay {
   exercises: Exercise[];
   durationMinutes: number;
 }
+
+// Alias fuer Abwaertskompatibilitaet
+export type WorkoutDay = TrainingDay;
 
 export interface TrainingPlan {
   id: string;
@@ -79,9 +87,9 @@ export interface Ingredient {
   name: string;
   amount: string;
   calories: number;
-  protein: number;       // g
-  carbs: number;         // g
-  fat: number;           // g
+  protein: number;  // g
+  carbs: number;    // g
+  fat: number;      // g
 }
 
 export interface Macros {
@@ -99,15 +107,22 @@ export interface Recipe {
   name: string;
   description: string;
   category: MealCategory;
-  diet: DietType[];
-  prepMinutes: number;
-  cookMinutes: number;
+  diet?: DietType[];
+  prepTimeMinutes: number;
+  cookMinutes?: number;
   servings: number;
   difficulty: 'easy' | 'medium' | 'hard';
-  macrosPerServing: Macros;
+  // Makros direkt (fuer einfachere Nutzung) oder via macrosPerServing
+  calories: number;
+  protein: number;
+  carbs: number;
+  fat: number;
+  macrosPerServing?: Macros;
   ingredients: Ingredient[];
-  steps: string[];
+  steps?: string[];
+  instructions?: string[];  // Alias fuer steps
   tags: string[];
+  goal?: string[];
   isCustom?: boolean;
   createdAt?: string;
 }
@@ -124,22 +139,37 @@ export interface MacroGoals {
 }
 
 // --- Learning ---
+export interface Flashcard {
+  id: string;
+  front: string;
+  back: string;
+  hint?: string;
+  subject?: string;
+  tags?: string[];
+}
+
+export interface LearningDeck {
+  id: string;
+  title: string;
+  subject: string;
+  type: 'flashcards' | 'video';
+  description: string;
+  difficulty: 'easy' | 'medium' | 'hard';
+  tags: string[];
+  cards?: Flashcard[];
+  videoUrl?: string;
+  isCustom?: boolean;
+  createdAt?: string;
+}
+
+export type LearningSubject = 'mathematik' | 'bwl' | 'informatik' | 'statistik' | 'englisch' | 'recht' | 'marketing' | 'custom';
+
 export interface QuizQuestion {
   id: string;
   question: string;
   options: string[];
   correctIndex: number;
   explanation: string;
-}
-
-export type LearningSubject = 'mathematik' | 'bwl' | 'informatik' | 'statistik' | 'englisch' | 'recht' | 'marketing' | 'custom';
-
-export interface Flashcard {
-  id: string;
-  front: string;
-  back: string;
-  subject: LearningSubject;
-  tags: string[];
 }
 
 export interface LearningModule {
@@ -173,8 +203,15 @@ export interface ToastMessage {
 }
 
 export type Theme = 'dark' | 'light';
-
 export type SubscriptionPlan = 'free' | 'pro';
+
+export interface User {
+  id: string;
+  email: string;
+  name: string;
+  createdAt: string;
+  subscription: SubscriptionPlan;
+}
 
 export interface AppUser {
   isLoggedIn: boolean;
